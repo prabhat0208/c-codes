@@ -4,7 +4,7 @@ using namespace std;
 
 bool areAnagram(string str1, string str2)
 {
-
+	// Get lengths of both strings
 	int n1 = str1.length();
 	int n2 = str2.length();
 
