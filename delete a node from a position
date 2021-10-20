@@ -52,6 +52,7 @@ void deleteNode(Node **head_ref, int position)
 	if (temp == NULL || temp->next == NULL)
 		return;
 	Node *next = temp->next->next;
+	// Unlink the deleted node from list
 	free(temp->next); // Free memory
 	temp->next = next;
 }
