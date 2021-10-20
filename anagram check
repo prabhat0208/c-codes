@@ -7,8 +7,8 @@ bool areAnagram(string str1, string str2)
 	// Get lengths of both strings
 	int n1 = str1.length();
 	int n2 = str2.length();
-
-if (n1 != n2)
+	 // If length of both strings is not same, then they cannot be anagram
+	if (n1 != n2)
 		return false;
 
 	sort(str1.begin(), str1.end());
