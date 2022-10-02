@@ -17,11 +17,11 @@ bool cycle_detection(int vertex, int parent){
 		if(visited[child] == true && child == parent)	continue;
 		if(visited[child])	return true;
 		
-		//operations to perform after exiting a child;
+		//operations to perform after exiting a child
 		isLoopExists |= cycle_detection(child, vertex);
 
 	}
-	//operations to perform after before exiting a vertex;
+	//operations to perform after before exiting a vertex
 	return isLoopExists;
 }
 
