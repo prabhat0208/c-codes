@@ -3,6 +3,7 @@ using namespace std;
 
 vector<string> valid;
 void generate(string &s, int open, int close){
+	//generates paranthesis
 	if(open == 0 && close == 0){
 		valid.push_back(s);
 		return;
