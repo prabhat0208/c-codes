@@ -12,6 +12,7 @@ int main()
 			sum += arr[i];
 	}
 	total = (n*(n+1))/2;
-	cout << total - sum;
+	long long ans = total - sum;
+	cout << ans;
 	return 0;
 }
