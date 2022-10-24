@@ -45,6 +45,7 @@ int main(){
 			dfs(i);	
 			cc.pb(current_cc);
 			count++;
+			//for F or T
 		}
 	}
 	for(auto &components : cc){
