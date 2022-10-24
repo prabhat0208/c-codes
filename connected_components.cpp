@@ -30,6 +30,7 @@ int main(){
 		cin >> v1 >> v2;
 		graph[v1].pb(v2);
 		graph[v2].pb(v1);
+		//this is for grp
 	}
 	for(int i =1; i <=n; ++i){
 		for(auto &child : graph[i])
@@ -44,6 +45,7 @@ int main(){
 			dfs(i);	
 			cc.pb(current_cc);
 			count++;
+			//for F or T
 		}
 	}
 	for(auto &components : cc){
