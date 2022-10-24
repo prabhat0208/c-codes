@@ -19,6 +19,7 @@ bool cycle_detection(int vertex, int parent){
 		
 		//operations to perform after exiting a child
 		isLoopExists |= cycle_detection(child, vertex);
+		//operations performed
 
 	}
 	//operations to perform after before exiting a vertex
