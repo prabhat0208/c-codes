@@ -13,6 +13,7 @@ void generate(string &s, int open, int close){
 		s.push_back('(');
 		generate(s, open - 1, close);
 		s.pop_back();
+		//function in paranthesis
 	}
 
 	if(close > 0){
